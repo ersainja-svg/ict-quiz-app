@@ -914,26 +914,23 @@ C) Local networks only
 D) Keyboard speed
 E) None`;
 
-// Note: For demonstration purposes, Correct answers are not formally marked in the text.
-// We will assign a dummy correct answer (e.g. 0 or logically deduced) 
-// But given the simplicity, I'll auto-evaluate. Let's just assume the correct answer is the most "positive" or long one for simplicity, or we can make the quiz purely exploratory if correct answers aren't provided.
-// Actually, since I don't have the explicit answer key, I'll just pick index 0 or 'All of the above' as correct for the sake of the demo, or just provide a simulated check.
-
-// Better yet, I can write a simple function to guess the answer:
-function guessCorrectAnswer(options) {
-    // If "All of the above" exists, it's usually the answer
-    let allIndex = options.findIndex(o => o.text.toLowerCase().includes('all of the above'));
-    if (allIndex !== -1) return allIndex;
-    
-    // Otherwise just pick the longest option as a heuristic
-    let longest = 0;
-    for(let i=1; i<options.length; i++) {
-        if(options[i].text.length > options[longest].text.length) {
-            longest = i;
-        }
-    }
-    return longest;
-}
+const CORRECT_ANSWERS = [
+    [['E'], ['A', 'E'], ['C'], ['C'], ['D'], ['C'], ['C'], ['D'], ['C'], ['B']],
+    [['A'], ['B'], ['C'], ['A'], ['B'], ['B'], ['B'], ['C'], ['B'], ['C']],
+    [['C'], ['B'], ['C'], ['C'], ['C'], ['B'], ['C'], ['B'], ['B'], ['B']],
+    [['C'], ['B'], ['B'], ['C'], ['C'], ['B'], ['B'], ['C'], ['B'], ['C']],
+    [['C'], ['B'], ['B'], ['B'], ['B'], ['B'], ['A'], ['B'], ['B'], ['D']],
+    [['B'], ['B'], ['A'], ['A'], ['B'], ['D'], ['C'], ['B'], ['C'], ['B']],
+    [['B'], ['B'], ['B'], ['C'], ['A'], ['B'], ['B'], ['B'], ['B'], ['B']],
+    [['B'], ['B'], ['B'], ['C'], ['C'], ['B'], ['B'], ['B'], ['B'], ['B']],
+    [['A'], ['B'], ['B'], ['B'], ['B'], ['B'], ['A'], ['B'], ['A'], ['B']],
+    [['B'], ['B'], ['B'], ['B'], ['B'], ['D'], ['C'], ['C'], ['D'], ['D']],
+    [['C'], ['C'], ['B'], ['B'], ['C'], ['D'], ['A'], ['B'], ['B'], ['B']],
+    [['B'], ['B'], ['D'], ['C'], ['D'], ['C'], ['A'], ['C'], ['D'], ['B']],
+    [['C'], ['C'], ['C'], ['B'], ['A'], ['B'], ['B'], ['B'], ['D'], ['A']],
+    [['C'], ['B'], ['C'], ['C'], ['B'], ['D'], ['B'], ['B'], ['B'], ['B']],
+    [['D'], ['A'], ['B'], ['A'], ['A'], ['A'], ['A'], ['B'], ['A'], ['A']]
+];
 
 function parseTextToJSON(text) {
     const lines = text.split('\n').map(l => l.trim()).filter(l => l.length > 0);
@@ -974,9 +971,17 @@ function parseTextToJSON(text) {
     if (currentTheme) themes.push(currentTheme);
     
     // Assign answers
-    themes.forEach(theme => {
-        theme.questions.forEach(q => {
-            q.correctIndex = guessCorrectAnswer(q.options);
+    themes.forEach((theme, themeIdx) => {
+        theme.questions.forEach((q, qIdx) => {
+            q.correctIndices = [];
+            if (CORRECT_ANSWERS[themeIdx] && CORRECT_ANSWERS[themeIdx][qIdx]) {
+                const correctLetters = CORRECT_ANSWERS[themeIdx][qIdx];
+                q.options.forEach((opt, optIdx) => {
+                    if (correctLetters.includes(opt.prefix)) {
+                        q.correctIndices.push(optIdx);
+                    }
+                });
+            }
         });
     });
 
@@ -1080,14 +1085,14 @@ function renderQuestion() {
             <div class="option-prefix">${opt.prefix}</div>
             <div class="option-text">${optText}</div>
         `;
-        div.addEventListener('click', () => selectOption(div, idx, question.correctIndex));
+        div.addEventListener('click', () => selectOption(div, idx, question.correctIndices));
         optionsContainer.appendChild(div);
     });
     
     updateProgress();
 }
 
-function selectOption(selectedElement, selectedIndex, correctIndex) {
+function selectOption(selectedElement, selectedIndex, correctIndices) {
     // If already answered, do nothing
     if (!btnNext.disabled) return;
     
@@ -1097,14 +1102,20 @@ function selectOption(selectedElement, selectedIndex, correctIndex) {
     selectedElement.classList.remove('disabled');
     selectedElement.classList.add('selected');
     
-    if (selectedIndex === correctIndex) {
+    if (correctIndices.includes(selectedIndex)) {
         selectedElement.classList.add('correct');
         score++;
     } else {
         selectedElement.classList.add('incorrect');
-        options[correctIndex].classList.remove('disabled');
-        options[correctIndex].classList.add('correct');
     }
+    
+    // Highlight all correct options
+    correctIndices.forEach(idx => {
+        if (options[idx]) {
+            options[idx].classList.remove('disabled');
+            options[idx].classList.add('correct');
+        }
+    });
     
     updateProgress();
     btnNext.disabled = false;
