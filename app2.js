@@ -930,18 +930,11 @@ const CORRECT_ANSWERS = [
     [['C'], ['C'], ['C'], ['B'], ['A'], ['B'], ['B'], ['B'], ['D'], ['A']],
     [['C'], ['B'], ['C'], ['C'], ['B'], ['D'], ['B'], ['B'], ['B'], ['B']],
     [['D'], ['A'], ['B'], ['A'], ['A'], ['A'], ['A'], ['B'], ['A'], ['A']],
-    [['B'], ['C'], ['C'], ['C'], ['B'], ['B'], ['B'], ['C'], ['B'], ['C']],
-    [['C'], ['B'], ['C'], ['B'], ['C'], ['B'], ['B'], ['C'], ['B'], ['B']],
-    [['C'], ['B'], ['B'], ['B'], ['B'], ['C'], ['B'], ['B'], ['C'], ['B']],
-    [['B'], ['C'], ['B'], ['C'], ['C'], ['C'], ['C'], ['B'], ['D'], ['B']],
-    [['B'], ['C'], ['B'], ['C'], ['B'], ['C'], ['B'], ['C'], ['B'], ['C']],
-    [['D'], ['C'], ['B'], ['B'], ['C'], ['D'], ['B'], ['C'], ['D'], ['B']],
-    [['B'], ['B'], ['C'], ['B'], ['B'], ['C'], ['C'], ['B'], ['C'], ['B']],
-    [['C'], ['C'], ['B'], ['C'], ['C'], ['D'], ['B'], ['C'], ['C'], ['C']],
-    [['B'], ['C'], ['B'], ['B'], ['C'], ['D'], ['C'], ['C'], ['B'], ['C']],
-    [['B'], ['D'], ['B'], ['B'], ['C'], ['C'], ['B'], ['C'], ['C'], ['C']],
-    [['B'], ['B'], ['C'], ['D'], ['C'], ['B'], ['C'], ['B'], ['C'], ['B']],
-    [['C'], ['C'], ['B'], ['C'], ['C'], ['C'], ['C'], ['B'], ['B'], ['C']]
+    [['B'], ['C'], ['C'], ['C'], ['B'], ['B'], ['B'], ['C'], ['B'], ['C'], ['C'], ['B'], ['C'], ['B'], ['C'], ['B'], ['B'], ['C'], ['B'], ['B'], ['C'], ['B'], ['B'], ['B'], ['B']],
+    [['C'], ['B'], ['B'], ['C'], ['B'], ['B'], ['C'], ['B'], ['C'], ['C'], ['C'], ['C'], ['B'], ['D'], ['B'], ['B'], ['C'], ['B'], ['C'], ['B'], ['C'], ['B'], ['C'], ['B'], ['C']],
+    [['D'], ['C'], ['B'], ['B'], ['C'], ['D'], ['B'], ['C'], ['D'], ['B'], ['B'], ['B'], ['C'], ['B'], ['B'], ['C'], ['C'], ['B'], ['C'], ['B'], ['C'], ['C'], ['B'], ['C'], ['C']],
+    [['D'], ['B'], ['C'], ['C'], ['C'], ['B'], ['C'], ['B'], ['B'], ['C'], ['D'], ['C'], ['C'], ['B'], ['C'], ['B'], ['D'], ['B'], ['B'], ['C'], ['C'], ['B'], ['C'], ['C'], ['C']],
+    [['B'], ['B'], ['C'], ['D'], ['C'], ['B'], ['C'], ['B'], ['C'], ['B'], ['C'], ['C'], ['B'], ['C'], ['C'], ['C'], ['C'], ['B'], ['B'], ['C']]
 ];
 
 function parseTextToJSON(text) {
@@ -1208,216 +1201,210 @@ A) Control Unit (CU)
 B) Output Unit
 C) Arithmetic Logic Unit (ALU)
 D) Storage Unit
-
-Theme 17: Final Exam Part 2
-1. What is the role of the Control Unit (CU) in a computer system?
+11. What is the role of the Control Unit (CU) in a computer system?
 A) It stores permanent data
 B) It displays output on the monitor
 C) It directs the operation of the processor and manages data flow between the CPU and other components
 D) It converts input devices into output signals
-2. Primary storage in a computer refers to which of the following?
+12. Primary storage in a computer refers to which of the following?
 A) Hard disk drive
 B) RAM (Random Access Memory)
 C) USB flash drives
 D) Cloud storage
-3. What is a Neural Processing Unit (NPU) designed for?
+13. What is a Neural Processing Unit (NPU) designed for?
 A) Managing network connections
 B) Storing large amounts of data
 C) Accelerating AI tasks such as facial recognition and voice processing
 D) Cooling the CPU during operation
-4. Which type of key on a keyboard is used to perform specific tasks and is labelled F1 to F12?
+14. Which type of key on a keyboard is used to perform specific tasks and is labelled F1 to F12?
 A) Alphanumeric keys
 B) Function keys
 C) Navigation keys
 D) Numeric keypad keys
-5. What connects the external environment to the computer by converting user input into machine-readable format?
+15. What connects the external environment to the computer by converting user input into machine-readable format?
 A) Output devices
 B) Storage units
 C) Input devices
 D) Processing units
-6. Currently, computer systems are primarily judged by which performance metric?
+16. Currently, computer systems are primarily judged by which performance metric?
 A) Number of USB ports available
 B) High-performance per watt, especially for AI workloads
 C) The size of the monitor
 D) Number of installed games
-7. Which of the following best describes system software?
+17. Which of the following best describes system software?
 A) Programs installed for entertainment purposes
 B) Foundational software that enables hardware to work, acting as a bridge between user, hardware, and application software
 C) Software used only for editing documents
 D) Programs downloaded from the internet for free
-8. During which generation of computing were machines programmed directly using Machine Language (0s and 1s) with no operating system?
+18. During which generation of computing were machines programmed directly using Machine Language (0s and 1s) with no operating system?
 A) Second Generation (1955–1965)
 B) Third Generation (1965–1980)
 C) First Generation (1940–early 1950s)
 D) Fourth Generation (1980–2010)
-9. Which operating system feature describes organising data in a user-friendly structure beyond physical disk sectors?
+19. Which operating system feature describes organising data in a user-friendly structure beyond physical disk sectors?
 A) Processor Scheduling
 B) File Management
 C) Device Buffering
 D) Memory Isolation
-10. What scheduling algorithm does the OS use to decide which process gets the CPU and for how long in a multitasking environment?
+20. What scheduling algorithm does the OS use to decide which process gets the CPU and for how long in a multitasking environment?
 A) FIFO and Stack
 B) Round Robin and Priority Scheduling
 C) Linear and Binary Scheduling
 D) Packet and Frame Scheduling
-
-Theme 18: Final Exam Part 3
-1. Microsoft Windows was first released in which year?
+21. Microsoft Windows was first released in which year?
 A) 1975
 B) 1990
 C) 1985
 D) 2000
-2. What is the purpose of 'spooling' in operating system device management?
+22. What is the purpose of 'spooling' in operating system device management?
 A) Compressing files to save space
 B) Temporarily storing data to match the speed of the CPU with slower devices like printers
 C) Encrypting data for secure transfer
 D) Sorting processes by priority
-3. Which of the following represents the 'Fifth Generation' of operating systems (2020–Present)?
+23. Which of the following represents the 'Fifth Generation' of operating systems (2020–Present)?
 A) Introduction of batch processing
 B) AI-native and spatial computing systems such as Windows 11 and future versions
 C) The rise of GUIs with Windows and macOS
 D) The development of networked systems and early internet
-4. Application software is best described as?
+24. Application software is best described as?
 A) Software that manages computer memory
 B) Programs that perform specific functions such as productivity, gaming, and AI tools
 C) The core interface between hardware and the user
 D) The set of instructions embedded in a processor chip
-5. What does HCI stand for?
+25. What does HCI stand for?
 A) Hardware-Computer Interface
 B) Human-Computer Interaction
 C) Hybrid Communication Integration
 D) Human-Controlled Intelligence
-6. Which early computer interface required users to type specific text commands without graphical elements?
+
+Theme 17: Final Exam Part 2
+1. Which early computer interface required users to type specific text commands without graphical elements?
 A) Graphical User Interface (GUI)
 B) Touch Interface
 C) Command Line Interface (CLI)
 D) Gesture Interface
-7. The XEROX STAR, launched in 1981, was significant because it featured which innovation?
+2. The XEROX STAR, launched in 1981, was significant because it featured which innovation?
 A) The first touchscreen computer
 B) A mouse-driven graphical user interface, integrated Ethernet networking, and a laser printer
 C) The first voice-controlled operating system
 D) The first AI assistant integrated into a desktop
-8. User-Centered Design (UCD) is best described as?
+3. User-Centered Design (UCD) is best described as?
 A) Designing systems primarily for technical experts
 B) An iterative process that focuses on the needs of users at every stage of product design and development
 C) A design method that prioritises aesthetics over functionality
 D) A single-step process of creating a final product
-9. Which HCI evaluation technique compares two design versions to determine which performs better?
+4. Which HCI evaluation technique compares two design versions to determine which performs better?
 A) Moderated testing
 B) Focus groups
 C) A/B testing
 D) Heuristic evaluation
-10. Which technology, introduced by Nintendo in 2006, detects three-dimensional movements and changed gaming interaction?
+5. Which technology, introduced by Nintendo in 2006, detects three-dimensional movements and changed gaming interaction?
 A) Oculus Rift
 B) Nintendo Wii remote controller
 C) Kinect for Xbox
 D) PlayStation Move
-
-Theme 19: Final Exam Part 4
-1. What does the term 'agentic AI' refer to in modern HCI?
+6. What does the term 'agentic AI' refer to in modern HCI?
 A) AI systems that only respond to typed commands
 B) Autonomous AI systems that handle tasks while maintaining human oversight
 C) AI that creates art without any human input
 D) AI used exclusively in healthcare applications
-2. Which principle of User-Centered Design emphasises that products should be accessible to all users, including those with disabilities?
+7. Which principle of User-Centered Design emphasises that products should be accessible to all users, including those with disabilities?
 A) Iterative Design Process
 B) Use of Research and Data-Driven Decisions
 C) Accessible and Inclusive Design
 D) Focus on Users and Their Needs
-3. What is a Database System (DBS)?
+8. What is a Database System (DBS)?
 A) A single spreadsheet used to store data
 B) A collection of interrelated components that enable the development and deployment of database applications
 C) A type of network protocol
 D) A social media platform for sharing data
-4. Which database model uses a tree-like structure with parent and child records?
+9. Which database model uses a tree-like structure with parent and child records?
 A) Relational Model
 B) Network Model
 C) Hierarchical Model
 D) NoSQL Model
-5. The relational database model was introduced by which computer scientist?
+10. The relational database model was introduced by which computer scientist?
 A) Tim Berners-Lee
 B) Alan Turing
 C) E.F. Codd
 D) Bill Gates
-6. Which type of database was developed in the 2000s to handle unstructured and big data with flexibility?
+11. Which type of database was developed in the 2000s to handle unstructured and big data with flexibility?
 A) Hierarchical Database
 B) Flat File System
 C) NoSQL Database
 D) Object-Oriented Database
-7. In an Entity-Relationship (ER) Model, what does an 'attribute' describe?
+12. In an Entity-Relationship (ER) Model, what does an 'attribute' describe?
 A) A connection between two entities
 B) A real-world thing that you store information about
 C) A detail that describes an entity (e.g., StudentID, Name, Age)
 D) A table that stores relationships
-8. A classic example of a hierarchical database is?
+13. A classic example of a hierarchical database is?
 A) MongoDB
 B) IBM's Information Management System (IMS)
 C) Google Cloud SQL
 D) PostgreSQL
-9. Which database model allows a child record to be connected to multiple parents, creating a web-like structure?
+14. Which database model allows a child record to be connected to multiple parents, creating a web-like structure?
 A) Hierarchical Model
 B) Relational Model
 C) Cloud Model
 D) Network Model
-10. What combination of features does NewSQL combine?
+15. What combination of features does NewSQL combine?
 A) Flat file simplicity with hierarchical speed
 B) NoSQL scalability with relational ACID properties
 C) Object-oriented storage with cloud delivery
 D) Network flexibility with XML-based queries
-
-Theme 20: Final Exam Part 5
-1. Data analysis is best defined as?
+16. Data analysis is best defined as?
 A) The process of selling data to businesses
 B) The process of inspecting, cleaning, transforming, and modelling data to discover useful information and support decision-making
 C) Storing large amounts of data in cloud systems
 D) Creating visual graphs from spreadsheets
-2. Which type of data analysis answers the question 'What happened?' by summarising historical data?
+17. Which type of data analysis answers the question 'What happened?' by summarising historical data?
 A) Prescriptive Analysis
 B) Predictive Analysis
 C) Descriptive Analysis
 D) Diagnostic Analysis
-3. What does 'Data Governance' refer to in data management?
+18. What does 'Data Governance' refer to in data management?
 A) Encrypting all data with advanced algorithms
 B) Setting clear rules and responsibilities for how data is managed, including policies and compliance
 C) Deleting old data to save storage space
 D) Making data publicly available to all users
-4. According to McKinsey, companies using data-driven strategies are how many times more likely to outperform competitors?
+19. According to McKinsey, companies using data-driven strategies are how many times more likely to outperform competitors?
 A) 5 times
 B) 10 times
 C) 23 times
 D) 50 times
-5. What does 'Data Mesh' mean in modern data management?
+20. What does 'Data Mesh' mean in modern data management?
 A) A central IT team controls all organisational data
 B) Different departments own and manage their own data instead of a single central team
 C) Data is encrypted using a mesh network
 D) A physical network of data centres across a city
-6. Which principle of data management ensures data is accurate, complete, consistent, and up to date?
+21. Which principle of data management ensures data is accurate, complete, consistent, and up to date?
 A) Data Stewardship
 B) Data Integration
 C) Data Quality
 D) Data Accessibility
-7. What is 'Data-as-a-Service (DaaS)'?
+22. What is 'Data-as-a-Service (DaaS)'?
 A) A method of physically delivering data on USB drives
 B) Accessing high-quality datasets on demand via cloud platforms without building expensive infrastructure
 C) A type of antivirus software for data protection
 D) A government service for recording citizen data
-8. Which analysis technique cannot measure data directly and is used when decisions are based on subjective interpretation such as customer feedback?
+23. Which analysis technique cannot measure data directly and is used when decisions are based on subjective interpretation such as customer feedback?
 A) Quantitative Data Analysis
 B) Descriptive Data Analysis
 C) Qualitative Data Analysis
 D) Predictive Data Analysis
-9. What is a network in the context of computing?
+24. What is a network in the context of computing?
 A) A single computer with multiple monitors
 B) A collection of interconnected devices linked by communication channels to exchange data and share resources
 C) A software program for managing files
 D) A type of encryption protocol
-10. Which network type covers a limited geographic area such as a home, office, or school building?
+25. Which network type covers a limited geographic area such as a home, office, or school building?
 A) WAN
 B) MAN
 C) LAN
 D) PAN
 
-Theme 21: Final Exam Part 6
+Theme 18: Final Exam Part 3
 1. Which transmission medium offers the highest bandwidth and lowest signal loss, with complete immunity to electromagnetic interference?
 A) Twisted pair cable
 B) Coaxial cable
@@ -1468,216 +1455,210 @@ A) It deleted all social media accounts
 B) It encrypted files and locked users out; hospitals had to use pen and paper with over $4 billion in total damage
 C) It only slowed down computer speeds
 D) It changed the language settings of affected computers
-
-Theme 22: Final Exam Part 7
-1. What is 'phishing' in cybersecurity?
+11. What is 'phishing' in cybersecurity?
 A) A type of network protocol
 B) When criminals send fake messages that look real, trying to trick users into giving personal information
 C) A method of securely encrypting emails
 D) A hardware component used for data authentication
-2. In a Man-in-the-Middle (MITM) attack, what does the hacker do?
+12. In a Man-in-the-Middle (MITM) attack, what does the hacker do?
 A) Physically steals a computer from an office
 B) Secretly places themselves between two communicating parties, reading and possibly changing messages
 C) Sends large volumes of spam emails
 D) Installs ransomware on a company server
-3. Which social engineering technique involves an attacker leaving a USB drive on the ground to trick someone into plugging it in?
+13. Which social engineering technique involves an attacker leaving a USB drive on the ground to trick someone into plugging it in?
 A) Pretexting
 B) Tailgating
 C) Baiting
 D) Quid Pro Quo
-4. What is the best protection against ransomware attacks, according to the course material?
+14. What is the best protection against ransomware attacks, according to the course material?
 A) Using a strong password
 B) Offline backups — so files can be restored without paying the ransom
 C) Deleting all email accounts
 D) Disconnecting from the internet permanently
-5. What is the difference between the Internet and the World Wide Web?
+15. What is the difference between the Internet and the World Wide Web?
 A) They are exactly the same thing
 B) The Internet is the physical global network of cables, routers, and servers; the WWW is one service (websites) that uses the internet
 C) The WWW is a type of hardware device
 D) The Internet only works on mobile devices
-6. What does DNS (Domain Name System) do?
+16. What does DNS (Domain Name System) do?
 A) Encrypts web pages for secure browsing
 B) Stores all websites on a single server
 C) Translates human-readable domain names (e.g., youtube.com) into IP addresses
 D) Controls the speed of internet connections
-7. Which protocol is described as 'the foundation' that splits data into packets and delivers them?
+17. Which protocol is described as 'the foundation' that splits data into packets and delivers them?
 A) HTTP
 B) FTP
 C) TCP/IP
 D) HTTPS
-8. What does 'HTTPS' provide compared to 'HTTP'?
+18. What does 'HTTPS' provide compared to 'HTTP'?
 A) Faster loading times
 B) A secure, encrypted version of HTTP indicated by the lock icon in the browser
 C) Access to private databases
 D) A system for uploading files to web servers
-9. In the client-server model of the web, which technologies run on the client side?
+19. In the client-server model of the web, which technologies run on the client side?
 A) PHP, Python, Node.js
 B) SQL databases and server scripts
 C) HTML, CSS, JavaScript — what users see in their browser
 D) Routers, switches, and modems
-10. What is a Content Delivery Network (CDN) used for?
+20. What is a Content Delivery Network (CDN) used for?
 A) Creating new domain names
 B) Delivering web content faster by storing copies of content at servers located closer to users
 C) Blocking unauthorised access to websites
 D) Generating unique IP addresses for websites
-
-Theme 23: Final Exam Part 8
-1. Which type of website allows everyone to edit its content? An example is Wikipedia.
+21. Which type of website allows everyone to edit its content? An example is Wikipedia.
 A) E-commerce site
 B) Blog
 C) Wiki
 D) Search Engine
-2. What type of hosting is described as 'like renting a hotel room' — flexible, scalable, and spread across many servers worldwide?
+22. What type of hosting is described as 'like renting a hotel room' — flexible, scalable, and spread across many servers worldwide?
 A) Shared Hosting
 B) Dedicated Hosting
 C) Cloud Hosting
 D) Virtual Hosting
-3. Which analogy best describes cloud computing?
+23. Which analogy best describes cloud computing?
 A) Building your own power plant at home
 B) Plugging into an electricity grid and paying for what you use
 C) Buying and owning all your own physical servers
 D) Printing all your documents and storing them in a filing cabinet
-4. Which cloud service model provides virtual machines, storage, and networks (like renting an empty apartment)?
+24. Which cloud service model provides virtual machines, storage, and networks (like renting an empty apartment)?
 A) SaaS (Software as a Service)
 B) PaaS (Platform as a Service)
 C) IaaS (Infrastructure as a Service)
 D) DaaS (Data as a Service)
-5. Amazon Web Services (AWS) introduced Elastic Compute Cloud (EC2) in which year, widely considered the birth of modern cloud computing?
+25. Amazon Web Services (AWS) introduced Elastic Compute Cloud (EC2) in which year, widely considered the birth of modern cloud computing?
 A) 1999
 B) 2002
 C) 2006
 D) 2010
-6. Which NIST characteristic of cloud computing allows resources to scale up or down automatically based on demand?
+
+Theme 19: Final Exam Part 4
+1. Which NIST characteristic of cloud computing allows resources to scale up or down automatically based on demand?
 A) On-Demand Self-Service
 B) Broad Network Access
 C) Measured Service
 D) Rapid Elasticity
-7. Which type of cloud deployment is dedicated to a single organisation, often used by banks and government agencies?
+2. Which type of cloud deployment is dedicated to a single organisation, often used by banks and government agencies?
 A) Public Cloud
 B) Private Cloud
 C) Hybrid Cloud
 D) Multi-Cloud
-8. As of Q2 2025, which cloud provider holds the largest market share globally?
+3. As of Q2 2025, which cloud provider holds the largest market share globally?
 A) Microsoft Azure
 B) Google Cloud
 C) Amazon Web Services (AWS)
 D) Oracle Cloud
-9. The idea of cloud computing was partly envisioned by which computer scientist who compared computing to a public utility?
+4. The idea of cloud computing was partly envisioned by which computer scientist who compared computing to a public utility?
 A) Bill Gates
 B) Steve Jobs
 C) John McCarthy
 D) Tim Berners-Lee
-10. According to Gartner, what percentage of large enterprises used cloud services by 2025?
+5. According to Gartner, what percentage of large enterprises used cloud services by 2025?
 A) 50%
 B) 75%
 C) 94%
 D) 100%
-
-Theme 24: Final Exam Part 9
-1. What is multimedia technology?
+6. What is multimedia technology?
 A) The use of only audio and video in a presentation
 B) The integration of multiple forms of content — text, audio, images, video, and animation — into a single interactive experience
 C) A type of network for sharing files
 D) Software used exclusively for making music
-2. Which type of multimedia plays in a fixed sequence from start to finish with no user control?
+7. Which type of multimedia plays in a fixed sequence from start to finish with no user control?
 A) Interactive Multimedia
 B) Non-linear Multimedia
 C) Linear Multimedia
 D) Dynamic Multimedia
-3. Canva has grown to how many monthly active users and integrates which AI image generation tools?
+8. Canva has grown to how many monthly active users and integrates which AI image generation tools?
 A) 50 million users; Stable Diffusion and MidJourney
 B) 190 million users; DALL-E and Google Imagen
 C) 1 billion users; ChatGPT and Gemini
 D) 20 million users; Adobe Firefly and Bing Image Creator
-4. What makes DaVinci Resolve unique compared to other professional video editing software?
+9. What makes DaVinci Resolve unique compared to other professional video editing software?
 A) It is cloud-based and requires a monthly subscription
 B) It is the only free editor capable of real-time 8K video editing
 C) It only works on Apple Mac computers
 D) It was developed by Adobe Systems
-5. Which multimedia component includes voice narration, background music, sound effects, and podcasts?
+10. Which multimedia component includes voice narration, background music, sound effects, and podcasts?
 A) Text
 B) Video
 C) Audio
 D) Animation
-6. CapCut was developed by which company?
+11. CapCut was developed by which company?
 A) Adobe
 B) Google
 C) Microsoft
 D) ByteDance (the company behind TikTok)
-7. Which animation type uses simulated motion created from a sequence of images or computer-generated graphics?
+12. Which animation type uses simulated motion created from a sequence of images or computer-generated graphics?
 A) Text
 B) Static Image
 C) Animation
 D) Linear Video
-8. What is an example of non-linear (interactive) multimedia?
+13. What is an example of non-linear (interactive) multimedia?
 A) A movie played from beginning to end
 B) A TV broadcast
 C) A website where users click links to explore different pages
 D) A radio programme
-9. What does 'smart' mean in the context of smart technology?
+14. What does 'smart' mean in the context of smart technology?
 A) A device that only works with voice commands
 B) A device that can sense its environment, process information, and respond intelligently with minimal human intervention
 C) Any device connected to a power outlet
 D) Expensive electronic equipment
-10. Approximately how many connected IoT devices existed globally in 2025?
+15. Approximately how many connected IoT devices existed globally in 2025?
 A) 1 billion
 B) 5 billion
 C) 21.1 billion
 D) 100 billion
-
-Theme 25: Final Exam Part 10
-1. What is the purpose of the Matter protocol in smart home technology?
+16. What is the purpose of the Matter protocol in smart home technology?
 A) To increase the speed of internet connections
 B) To solve device fragmentation by enabling smart devices from different manufacturers to communicate with each other
 C) To provide cloud storage for smart home data
 D) To replace Wi-Fi with a new wireless standard
-2. Which city became the first in the world to go 100% paperless for government services in 2024?
+17. Which city became the first in the world to go 100% paperless for government services in 2024?
 A) Singapore
 B) Barcelona
 C) Tokyo
 D) Dubai
-3. The Apple Watch offers which FDA-cleared health monitoring feature?
+18. The Apple Watch offers which FDA-cleared health monitoring feature?
 A) Blood sugar monitoring
 B) ECG for detecting atrial fibrillation
 C) Full MRI scanning
 D) Temperature measurement for fever detection
-4. What is Machine Learning (ML) in the context of smart technology?
+19. What is Machine Learning (ML) in the context of smart technology?
 A) A type of hardware that runs machine code
 B) A subset of AI that enables systems to improve performance over time without being explicitly reprogrammed
 C) A robot that physically assembles machines
 D) A network of sensors in a factory
-5. Which Kazakh city leads the country's smart city rankings according to the Ministry of Digital Development (2024)?
+20. Which Kazakh city leads the country's smart city rankings according to the Ministry of Digital Development (2024)?
 A) Almaty
 B) Shymkent
 C) Astana
 D) Aktau
-6. Sensors are described as the 'eyes and ears' of smart technology. Approximately how many sensors does a modern smartphone contain?
+21. Sensors are described as the 'eyes and ears' of smart technology. Approximately how many sensors does a modern smartphone contain?
 A) 1–2 sensors
 B) 3–5 sensors
 C) 10–15 sensors
 D) 50+ sensors
-7. What is e-technology?
+22. What is e-technology?
 A) Electronic devices used only in entertainment
 B) The use of electronic systems, tools, and devices to facilitate communication and information sharing in fields such as education, governance, and healthcare
 C) A social media platform
 D) Physical technology infrastructure in factories
-8. What was the global e-learning market valued at in 2024?
+23. What was the global e-learning market valued at in 2024?
 A) ~ $10 billion
 B) ~ $100 billion
 C) ~ $342.4 billion
 D) ~ $1 trillion
-9. Khanmigo, an AI tutor powered by GPT-4, is a product of which platform?
+24. Khanmigo, an AI tutor powered by GPT-4, is a product of which platform?
 A) Coursera
 B) Duolingo
 C) Khan Academy
 D) Udemy
-10. Gamification in e-learning uses game elements to increase engagement. Which platform reaches 128 million monthly active users using streaks and leaderboards?
+25. Gamification in e-learning uses game elements to increase engagement. Which platform reaches 128 million monthly active users using streaks and leaderboards?
 A) Moodle
 B) Kahoot!
 C) Duolingo
 D) Canvas
 
-Theme 26: Final Exam Part 11
+Theme 20: Final Exam Part 5
 1. What is Moodle and why is it widely used by Kazakhstani universities?
 A) A paid enterprise LMS used mainly by corporations
 B) An open-source, free, and highly customisable Learning Management System
@@ -1728,54 +1709,52 @@ A) The percentage of Kazakhstanis using cryptocurrency
 B) Kazakhstan's digital payment share, enabled by a unified QR code with 2.1 billion transactions in eight months
 C) The proportion of online banking users in Central Asia
 D) The share of mobile app downloads related to finance
-
-Theme 27: Final Exam Part 12
-1. Which term refers to virtual replicas of manufacturing processes that allow testing and optimisation before physical implementation?
+11. Which term refers to virtual replicas of manufacturing processes that allow testing and optimisation before physical implementation?
 A) 3D Printing
 B) Edge Computing
 C) Digital Twins
 D) Blockchain
-2. Kazakhstan invested over how much tenge in telecom infrastructure, with Starlink launching to extend rural connectivity?
+12. Kazakhstan invested over how much tenge in telecom infrastructure, with Starlink launching to extend rural connectivity?
 A) 10 billion tenge
 B) 100 billion tenge
 C) 450 billion tenge +
 D) 1 million tenge
-3. How does UNESCO define ICT?
+13. How does UNESCO define ICT?
 A) Any device with a screen and internet connection
 B) Forms of technology used to transmit, process, store, create, display, share, or exchange information by electronic means
 C) Software platforms for business management
 D) Physical infrastructure for telecommunications
-4. Google Willow, announced in December 2024, is a 105-qubit chip that completed a benchmark calculation in 5 minutes. How long would classical supercomputers take to solve the same calculation?
+14. Google Willow, announced in December 2024, is a 105-qubit chip that completed a benchmark calculation in 5 minutes. How long would classical supercomputers take to solve the same calculation?
 A) One hour
 B) One year
 C) Billions of years
 D) One million years
-5. 6G networks are expected to deliver data speeds of up to how many times faster than 5G?
+15. 6G networks are expected to deliver data speeds of up to how many times faster than 5G?
 A) 5 times
 B) 20 times
 C) 100 times (up to 1 Tbps)
 D) 500 times
-6. AI adoption among organisations reached what percentage in 2024, according to McKinsey?
+16. AI adoption among organisations reached what percentage in 2024, according to McKinsey?
 A) 25%
 B) 50%
 C) 72%
 D) 90%
-7. How many 5G connections existed globally by end of 2024?
+17. How many 5G connections existed globally by end of 2024?
 A) 500 million
 B) 1 billion
 C) 2.25 billion
 D) 5 billion
-8. The global cloud computing market reached what value in 2025 and is projected to exceed what by 2029?
+18. The global cloud computing market reached what value in 2025 and is projected to exceed what by 2029?
 A) $100 billion in 2025; $200 billion by 2029
 B) $723.4 billion in 2025; $1.42 trillion by 2029
 C) $300 billion in 2025; $600 billion by 2029
 D) $1 trillion in 2025; $2 trillion by 2029
-9. Which analogy best explains the difference between classical and quantum computing?
+19. Which analogy best explains the difference between classical and quantum computing?
 A) Classical computer is like a library; quantum computer is like a bookstore
 B) Classical computer tries every key one by one; quantum computer tries all keys simultaneously
 C) Classical computer uses electricity; quantum computer uses light
 D) Classical computer works offline; quantum computer requires the internet
-10. Starlink launched in Kazakhstan in August 2025 to primarily serve which group?
+20. Starlink launched in Kazakhstan in August 2025 to primarily serve which group?
 A) Urban businesses in Astana and Almaty
 B) International tourists visiting Kazakhstan
 C) Rural schools and areas with limited connectivity, connecting 1,700+ rural schools
